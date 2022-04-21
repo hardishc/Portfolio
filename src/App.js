@@ -2,8 +2,9 @@ import './App.css';
 import NavBar from './components/NavBar';
 import { ThemeProvider } from '@mui/material/styles';
 import { themeDefault } from './styles/Style';
-import { Box, Container, Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import SideBar from './components/SideBar';
+import Languages from './components/Languages';
 
 function App() {
   return (
@@ -38,6 +39,11 @@ function App() {
           </Grid>
         </Box>
 
+        <Box style={{ width: '100vw', height: '100vh' }} >
+          <Grid container spacing={4} justifyContent="center" >
+            <Languages />
+          </Grid>
+        </Box>
       </ThemeProvider>
 
     </div>

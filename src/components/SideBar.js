@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import './SideBar.css';
 
@@ -9,13 +9,13 @@ function SideBar() {
         <div className='side'>
             <ul className='nav-menu'>
                 <li>
-                   <FaInstagram size={30} />
+                    <FaInstagram size={30} />
                 </li>
                 <li>
                     <FaGithub size={30} />
                 </li>
                 <li>
-                    <FaLinkedin size={30}/>
+                    <FaLinkedin size={30} />
                 </li>
             </ul>
         </div>
