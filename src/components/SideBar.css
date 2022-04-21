@@ -1,0 +1,10 @@
+.side {
+    height: 80%;
+    display: flex;
+    position: fixed;
+}
+
+.nav-menu {
+    display: inline-block;
+    align-self: flex-end;
+}
