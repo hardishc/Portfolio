@@ -3,6 +3,8 @@ import { Typography, Stack, Box, Tooltip } from '@mui/material'
 import { DiJava, DiJavascript1, DiReact, DiCss3, DiHtml5, DiNodejs, DiPython } from 'react-icons/di';
 import { SiMaterialui, SiOracle, SiMongodb, SiMicrosoftazure } from 'react-icons/si';
 import { bgcolor } from '@mui/system';
+import { ThemeProvider } from '@emotion/react';
+import { themeDefault, themeDark } from '../styles/Style';
 
 function Languages() {
     var iconSize = 100
@@ -24,7 +26,7 @@ function Languages() {
             comp: <DiHtml5 size={iconSize} />,
             name: "HTML",
         },
-                {
+        {
             comp: <SiMaterialui size={iconSize} />,
             name: "MaterialUI",
         },
@@ -63,29 +65,31 @@ function Languages() {
 
 
     return (
-        <Box>
-            <Typography sx={{ fontSize: 60 }} color="primary.main" gutterBottom>
-                Skills
-            </Typography>
-            <Box sx={{ my: 10 }}></Box>
-            <Stack direction="row" spacing={6}>
-                {frontEnd.map((lang) => (
-                    <Tooltip key={lang.comp} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
-                ))}
-            </Stack>
-            <Box sx={{ my: 10 }}></Box>
-            <Stack direction="row" spacing={6}>
-                {backEnd.map((lang) => (
-                    <Tooltip key={lang.comp} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
-                ))}
-            </Stack>
-            <Box sx={{ my: 10 }}></Box>
-            <Stack direction="row" spacing={6}>
-                {dbHost.map((lang) => (
-                    <Tooltip key={lang.comp} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
-                ))}
-            </Stack>
-        </Box>
+        <ThemeProvider theme={themeDefault}>
+            <Box>
+                <Typography sx={{ fontSize: 60, textAlign: 'center' }} color="primary.main" gutterBottom>
+                    Skills
+                </Typography>
+                <Box sx={{ my: 10 }}></Box>
+                <Stack direction="row" color="primary.main" spacing={6}>
+                    {frontEnd.map((lang) => (
+                        <Tooltip key={lang.comp} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
+                    ))}
+                </Stack>
+                <Box  sx={{ my: 10 }}></Box>
+                <Stack color="primary.main" direction="row" spacing={6}>
+                    {backEnd.map((lang) => (
+                        <Tooltip key={lang.comp} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
+                    ))}
+                </Stack>
+                <Box sx={{ my: 10 }}></Box>
+                <Stack color="primary.main" direction="row" spacing={6}>
+                    {dbHost.map((lang) => (
+                        <Tooltip key={lang.comp} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
+                    ))}
+                </Stack>
+            </Box>
+        </ThemeProvider>
     )
 }
 

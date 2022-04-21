@@ -2,35 +2,16 @@
   text-align: center;
   overflow: hidden;
   color: rgba(29, 100, 45, 0.72);
+  
 }
 
 .main {
-  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("https://dl3.pushbulletusercontent.com/MzxINrs2rXtn5tMULuqT70DLRqO80HiN/harrison-broadbent-buULhkhKvno-unsplash-03.jpeg");
+  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("/public/background.jpeg");
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-.main h1 {
-  font-size: 5rem;
-  font-weight: bold;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.main h2 {
-  font-size: 2rem;
-  font-weight: normal;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.main p {
-  margin-top: 0;
-  font-size: 3rem;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

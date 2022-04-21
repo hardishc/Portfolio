@@ -1,10 +1,10 @@
-import { Button, Box, Card, Grid, CardContent, Typography } from '@mui/material'
+import { Button, Box, Card, Grid, CardContent, Typography, Link } from '@mui/material'
 import React from 'react'
 
 function Projects() {
     return (
         <Box style={{ width: '100vw', height: '80vh', }}>
-            <Typography sx={{ fontSize: 60 }} color="primary.main" gutterBottom>
+            <Typography sx={{ fontSize: 60, textAlign: 'center'}} color="primary.main" gutterBottom>
                 Projects
             </Typography>
             <Box sx={{ my: 20 }}></Box>
@@ -12,22 +12,24 @@ function Projects() {
                 <Grid item xs={1.5}>
                 </Grid>
                 <Grid item xs={3}>
-                    <Card>
-                        <CardContent>
-                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                Click to view
-                            </Typography>
-                            <Typography variant="h5" component="div">
-                                Developer Portfolio
-                            </Typography>
-                            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                    <Link color="inherit" underline="none" href="https://github.com/hardishc/Portfolio" target="_blank">
+                        <Card sx={{'&:hover': { boxShadow: 20 }}} >
+                            <CardContent>
+                                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                                    Click to view
+                                </Typography>
+                                <Typography variant="h5" component="div">
+                                    Developer Portfolio
+                                </Typography>
+                                <Typography sx={{ mb: 1.5 }} color="text.secondary">
 
-                            </Typography>
-                            <Typography variant="body2">
-                                Github Portfolio built using React and Material-UI
-                            </Typography>
-                        </CardContent>
-                    </Card>
+                                </Typography>
+                                <Typography variant="body2">
+                                    Github Portfolio built using React and Material-UI
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Link>
                 </Grid>
                 <Grid item xs={3}>
                     <Card>
