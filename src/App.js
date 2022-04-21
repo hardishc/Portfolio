@@ -5,6 +5,7 @@ import { themeDefault } from './styles/Style';
 import { Box, Grid } from '@mui/material';
 import SideBar from './components/SideBar';
 import Languages from './components/Languages';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Languages />
           </Grid>
         </Box>
+        <Projects/>
       </ThemeProvider>
 
     </div>

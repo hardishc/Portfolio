@@ -1,5 +1,5 @@
 import { React } from 'react'
-import { Stack, Box, Tooltip } from '@mui/material'
+import { Typography, Stack, Box, Tooltip } from '@mui/material'
 import { DiJava, DiJavascript1, DiReact, DiCss3, DiHtml5, DiNodejs, DiPython } from 'react-icons/di';
 import { SiMaterialui, SiOracle, SiMongodb, SiMicrosoftazure } from 'react-icons/si';
 import { bgcolor } from '@mui/system';
@@ -64,7 +64,9 @@ function Languages() {
 
     return (
         <Box>
-            <h1 style={{fontSize: 60}}>Skills</h1>
+            <Typography sx={{ fontSize: 60 }} color="primary.main" gutterBottom>
+                Skills
+            </Typography>
             <Box sx={{ my: 10 }}></Box>
             <Stack direction="row" spacing={6}>
                 {frontEnd.map((lang) => (
