@@ -1,12 +1,17 @@
 import { Grid, Button, AppBar, Link, Switch } from '@mui/material'
-import { React, useState } from 'react'
+import React from 'react'
 import { FaHackerrank } from 'react-icons/fa';
 import { themeDefault, themeDark } from '../styles/Style';
-import toggleMode from '../App';
-
 
 var option = ["Home", "Skills", "Projects", "Contact"]
-function NavBar() {
+function NavBar({ setMode }) {
+    const changeMode = (event) => {
+        if (event.target.checked) {
+            setMode(themeDark)
+        } else {
+            setMode(themeDefault)
+        }
+    }
     return (
         <AppBar sx={{ height: 100, justifyContent: "center" }}>
             <Grid container direction="row" justifyContent="center">
@@ -19,8 +24,9 @@ function NavBar() {
                                 <Button key={page}>{page}</Button>
                             ))}
                         </ButtonGroup> */}
-                    <Switch 
-                    onChange={toggleMode}/>
+                    <Switch                        
+                        onChange={changeMode}
+                    ></Switch>
                 </Grid>
             </Grid>
         </AppBar>

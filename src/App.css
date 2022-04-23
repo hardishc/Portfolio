@@ -2,16 +2,13 @@
   text-align: center;
   overflow: hidden;
   color: rgba(29, 100, 45, 0.72);
-  
 }
 
-.main {
-  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("/public/background.jpeg");
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.home {
+  background-size: 'cover';
+  background-repeat: 'no-repeat';
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
