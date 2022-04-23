@@ -4,7 +4,9 @@ import { FaHackerrank } from 'react-icons/fa';
 import { themeDefault, themeDark } from '../styles/Style';
 
 var option = ["Home", "Skills", "Projects", "Contact"]
+
 function NavBar({ setMode }) {
+
     const changeMode = (event) => {
         if (event.target.checked) {
             setMode(themeDark)
@@ -24,7 +26,7 @@ function NavBar({ setMode }) {
                                 <Button key={page}>{page}</Button>
                             ))}
                         </ButtonGroup> */}
-                    <Switch                        
+                    <Switch color="secondary"
                         onChange={changeMode}
                     ></Switch>
                 </Grid>

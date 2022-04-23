@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <ThemeProvider theme={mode}>
         <Paper className="home" sx={{backgroundSize: 'cover'}} style={mode.palette.styles}>
-          <NavBar setMode={setMode} />
+          <NavBar setMode={setMode}  />
           <SideBar />
           <HomePage />
         </Paper>

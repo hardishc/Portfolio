@@ -1,16 +1,16 @@
 import { createTheme } from '@mui/material/styles';
-import lightImage from './1.jpg'
-import darkImage from './2.jpg'
+import lightImage from './Light.jpg'
+import darkImage from './Dark.jpg'
 
 export const themeDefault = createTheme({
   palette: {
     primary: {
       main: 'rgba(29,100,45,0.72)',
-      dark: 'rgba(35,45,201,0.76)',
-      contrastText: '#ffffff',
+      lightText: '#d0d8d0',
+      darkText: 'rgba(29,100,45,0.72)'
     },
     secondary: {
-      main: 'rgba(106,135,218,0.72)',
+      main: 'rgba(29,100,45,0.72)',
     },
     background: {
       default: '#efefef',
@@ -30,7 +30,8 @@ export const themeDark = createTheme({
   palette: {
     primary: {
       main: 'rgba(71,82,133,0.72)',
-      contrastText: '#b7b4b4',
+      darkText: '#d0d8d0',
+      lightText: '#d0d8d0'
     },
     secondary: {
       main: '#c9b6c0',
