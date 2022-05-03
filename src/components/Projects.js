@@ -1,5 +1,5 @@
-import { Box, Card, Grid, CardContent, Typography, Link } from '@mui/material'
-import React from 'react'
+import { Box, Card, Grid, CardContent, Typography, Link } from '@mui/material';
+import React from 'react';
 
 function Projects() {
     return (

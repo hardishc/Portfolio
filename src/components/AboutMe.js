@@ -1,6 +1,6 @@
 import Profile from '../styles/Profile.jpg';
 import { Box, Button, Grid, Typography, Paper } from '@mui/material';
-import React from 'react'
+import React from 'react';
 import { textAlign } from '@mui/system';
 
 function AboutMe() {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 import '../App.css';
 import { themeDefault, themeDark } from '../styles/Style';

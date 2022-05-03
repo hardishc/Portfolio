@@ -1,5 +1,5 @@
-import { Grid, Button, AppBar, Link, Switch } from '@mui/material'
-import React from 'react'
+import { Grid, Button, AppBar, Link, Switch } from '@mui/material';
+import React from 'react';
 import { FaHackerrank } from 'react-icons/fa';
 import { themeDefault, themeDark } from '../styles/Style';
 
