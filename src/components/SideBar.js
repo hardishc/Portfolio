@@ -9,7 +9,7 @@ function SideBar() {
 
     return (
         <div className='side'>
-            <List  className='nav-menu'>
+            <List className='nav-menu'>
                 <ListItem  >
                     <Link sx={{'&:hover': { borderLeft: 5 }}}  href="http://www.instagram.com/hardish_c" target="_blank"><FaInstagram size={40} /></Link>
                 </ListItem>
