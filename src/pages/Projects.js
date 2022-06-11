@@ -1,78 +1,54 @@
 import { Box, Card, Grid, CardContent, Typography, Link, Paper } from '@mui/material';
 import React from 'react';
 
+const projects = [
+    {
+        title: 'Developer Portfolio',
+        description: 'Github Portfolio built using React and Material-UI',
+        status: 'Click to view',
+        link: 'https://github.com/hardishc/Portfolio'
+    },
+    {
+        title: 'Assignment Collaborator',
+        description: ' Assignment Collaborator Platform for students to manage their group and personal assignments',
+        status: 'Work in Progress',
+        link: '/'
+    },
+    {
+        title: 'Photography Portfolio',
+        description: 'Personal Photography Portfolio website made using React',
+        status: 'Work in Progress',
+        link: '/'
+    }
+]
+
 function Projects() {
     return (
-        <Paper id="Projects">
-            <Box style={{ width: '100vw', height: '80vh', }}>
-                <Typography sx={{ fontSize: 60, textAlign: 'center' }} color="primary.darkText" gutterBottom>
-                    Projects
-                </Typography>
-                <Box sx={{ my: 20 }}></Box>
-                <Grid container spacing={5} >
-                    <Grid item xs={1.5}>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <Link color="inherit" underline="none" href="https://github.com/hardishc/Portfolio" target="_blank">
-                            <Card sx={{ backgroundColor: "primary.main", '&:hover': { boxShadow: 20 } }} >
-                                <CardContent>
-                                    <Typography sx={{ fontSize: 14 }} color="primary.lightText" gutterBottom>
-                                        Click to view
-                                    </Typography>
-                                    <Typography variant="h5" component="div" color="primary.lightText">
-                                        Developer Portfolio
-                                    </Typography>
-                                    <Typography sx={{ mb: 1.5 }} color="primary.lightText">
-
-                                    </Typography>
-                                    <Typography variant="body2" color="primary.lightText">
-                                        Github Portfolio built using React and Material-UI
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Link>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <Card sx={{ backgroundColor: "primary.main", '&:hover': { boxShadow: 20 } }} >
+        <Paper id="projects" sx={{ width: '100vw', height: '90vh' }}>
+            <Typography sx={{ fontSize: 60, textAlign: 'center', paddingTop: 5, paddingBottom: 15 }} color="secondary.main" gutterBottom>
+                Projects
+            </Typography>
+            <Box sx={{ display: 'flex', maxWidth: '80vw', margin: '0 auto', flexWrap: 'wrap', justifyContent: 'space-evenly', columnGap: 20, rowGap: 5 }}>
+                {projects.map((project) => (
+                    <Link color="inherit" underline="none" href="https://github.com/hardishc/Portfolio" target="_blank">
+                        <Card sx={{ backgroundColor: "primary.main", display: 'inline-block', textAlign: 'center', height: 150, maxWidth: 350, '&:hover': { boxShadow: 20 } }} >
                             <CardContent>
-                                <Typography sx={{ fontSize: 14 }} color="primary.lightText" gutterBottom>
-                                    Work in Progress
+                                <Typography sx={{ fontSize: 12 }} color="primary.lightText" gutterBottom>
+                                    {project.status}
                                 </Typography>
                                 <Typography variant="h5" component="div" color="primary.lightText">
-                                    Assignment Collaborator
+                                    {project.title}
                                 </Typography>
-                                <Typography sx={{ mb: 1.5 }} color="primary.lightText">
-
-                                </Typography>
-                                <Typography variant="body2" color="primary.lightText">
-                                    Assignment Collaborator Platform for students to manage their group as well as personal assignments
+                                <Typography variant="body2" color="primary.lightText" style={{marginTop : 10}}>
+                                    {project.description}
                                 </Typography>
                             </CardContent>
                         </Card>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <Card sx={{ backgroundColor: "primary.main", '&:hover': { boxShadow: 20 } }} >
-                            <CardContent>
-                                <Typography sx={{ fontSize: 14 }} color="primary.lightText" gutterBottom>
-                                    Work in Progress
-                                </Typography>
-                                <Typography variant="h5" component="div" color="primary.lightText">
-                                    Personal Photography Portfolio
-                                </Typography>
-                                <Typography sx={{ mb: 1.5 }} color="primary.lightText">
-
-                                </Typography>
-                                <Typography variant="body2" color="primary.lightText">
-                                    Personal Photography Portfolio website made using React
-                                </Typography>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={1.5}>
-                    </Grid>
-                </Grid>
+                    </Link>
+                ))}
             </Box>
-        </Paper>
+        </ Paper>
+
     )
 }
 

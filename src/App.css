@@ -4,11 +4,6 @@
   color: rgba(29, 100, 45, 0.72);
 }
 
-.home {
-  background-size: 'cover';
-  background-repeat: 'no-repeat';
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

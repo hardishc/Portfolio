@@ -14,18 +14,18 @@ function App() {
   const [mode, setMode] = useState(themeDefault);
 
   return (
-    <div className='App' >
+    <Paper sx={{overflow: 'hidden'}}>
       <ThemeProvider theme={mode} >
-        <Paper className="home" id="/" sx={{ backgroundSize: 'cover' }} style={mode.palette.styles}>
+        <Box sx={{ backgroundSize: 'cover'}} style={mode.palette.styles}>
           <NavBar setMode={setMode} />
           <SideBar />
           <HomePage />
-        </Paper>
+        </Box>
         <AboutMe />
         <Languages />
         <Projects />
       </ThemeProvider>
-    </div>
+    </Paper>
   );
 }
 

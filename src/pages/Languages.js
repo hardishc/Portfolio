@@ -62,12 +62,9 @@ function Languages() {
 
 
     return (
-        <Paper id="Skills">
-            <Box style={{ width: '100vw', height: '100vh'}} >
+            <Paper id="skills" style={{ width: '100vw', height: '100vh'}} >
                 <Grid container spacing={4} justifyContent="center" >
-
-
-                    <Box>
+                    <Box sx={{ my: 15 }}>
                         <Typography sx={{ fontSize: 60, textAlign: 'center' }} color="secondary.main" gutterBottom>
                             Skills
                         </Typography>
@@ -91,8 +88,7 @@ function Languages() {
                         </Stack>
                     </Box>
                 </Grid>
-            </Box>
-        </Paper>
+            </Paper>
     )
 }
 

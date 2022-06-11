@@ -4,8 +4,7 @@ import React from 'react';
 
 function AboutMe() {
     return (
-        <Paper id="About">
-            <Box color='primary.main' style={{ width: '100vw', height: '100vh' }} >
+            <Paper id="about" color='primary.main' style={{ width: '100vw', height: '100vh' }} >
                 <Grid container spacing={4} justifyContent="center">
                     <Grid item xs={4} sx={{ width: 300, height: 300, my: 20 }}>
                         <Typography color='primary.darkText' variant='h1' sx={{ fontSize: 70 }}>
@@ -21,8 +20,7 @@ function AboutMe() {
                         <img width="500px" src={Profile} alt='profile' />
                     </Grid>
                 </Grid>
-            </Box >
-        </Paper>
+            </Paper >
     )
 }
 

@@ -12,15 +12,15 @@ var option = [
     },
     {
         name: "About",
-        link: "#About"
+        link: "#about"
     },
     {
         name: "Skills",
-        link: "#Skills"
+        link: "#skills"
     },
     {
         name: "Projects",
-        link: "#Projects"
+        link: "#projects"
     }
 ]
 
@@ -44,7 +44,7 @@ function NavBar({ setMode }) {
                         <ButtonGroup variant="string" aria-label="outlined primary button group">
 
                             {option.map((page) => (
-                                <Link to={page.link} style={{ color: '#FFF'}} smooth>
+                                <Link to={page.link} style={{ color: '#FFF' }} smooth>
                                     <Button>
                                         <Typography color="primary.lightText">
                                             {page.name}
@@ -52,8 +52,13 @@ function NavBar({ setMode }) {
                                     </Button>
                                 </Link>
                             ))}
+                            <Button>
+                                <Typography color="primary.lightText">
+                                    Blog
+                                </Typography>
+                            </Button>
                         </ButtonGroup>
-                        <Switch color="secondary"
+                        <Switch
                             onChange={changeMode}
                         ></Switch>
                     </Grid>
