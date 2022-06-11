@@ -1,4 +1,4 @@
-import { Grid, Button, AppBar, Switch, ButtonGroup } from '@mui/material';
+import { Grid, Button, AppBar, Switch, ButtonGroup, Typography } from '@mui/material';
 import React from 'react';
 import { FaHackerrank } from 'react-icons/fa';
 import { themeDefault, themeDark } from '../styles/Style';
@@ -38,15 +38,20 @@ function NavBar({ setMode }) {
             <AppBar sx={{ height: 100, justifyContent: "center" }}>
                 <Grid container direction="row" justifyContent="center">
                     <Grid container xs={1}>
-                        <Link sx={{ color: "inherit" }} to="#/"><FaHackerrank size={30} /></Link>
+                        <Link style={{ color: '#FFF' }} to="#" smooth><FaHackerrank size={30} /></Link>
                     </Grid>
                     <Grid container xs={10} justifyContent="flex-end">
                         <ButtonGroup variant="string" aria-label="outlined primary button group">
-                            <Button>
-                                {option.map((page) => (
-                                    <Link to={page.link} smooth>{page.name}</Link>
-                                ))}
-                            </Button>
+
+                            {option.map((page) => (
+                                <Link to={page.link} style={{ color: '#FFF'}} smooth>
+                                    <Button>
+                                        <Typography color="primary.lightText">
+                                            {page.name}
+                                        </Typography>
+                                    </Button>
+                                </Link>
+                            ))}
                         </ButtonGroup>
                         <Switch color="secondary"
                             onChange={changeMode}
