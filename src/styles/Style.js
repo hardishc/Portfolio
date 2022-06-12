@@ -21,10 +21,10 @@ export const themeDefault = createTheme({
       secondary: 'rgba(255,255,255,0.54)',
     },
     styles: {
-      backgroundImage: "url(" + lightImage + ")",      
+      backgroundImage: "url(" + lightImage + ")",
     },
   }
-})
+});
 
 export const themeDark = createTheme({
   palette: {
@@ -48,4 +48,4 @@ export const themeDark = createTheme({
       backgroundImage: "url(" + darkImage + ")",
     },
   },
-})
+});

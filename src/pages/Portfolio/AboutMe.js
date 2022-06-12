@@ -1,4 +1,4 @@
-import Profile from '../styles/Profile.jpg';
+import Profile from '../../styles/Profile.jpg';
 import { Box, Grid, Typography, Paper } from '@mui/material';
 import React from 'react';
 
