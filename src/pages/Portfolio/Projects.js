@@ -29,8 +29,8 @@ function Projects() {
                 Projects
             </Typography>
             <Box sx={{ display: 'flex', maxWidth: '80vw', margin: '0 auto', flexWrap: 'wrap', justifyContent: 'space-evenly', columnGap: 20, rowGap: 5 }}>
-                {projects.map((project) => (
-                    <Link color="inherit" underline="none" href="https://github.com/hardishc/Portfolio" target="_blank">
+                {projects.map((project, index) => (
+                    <Link color="inherit" underline="none" href="https://github.com/hardishc/Portfolio" target="_blank" key={index}>
                         <Card sx={{ backgroundColor: "primary.main", display: 'inline-block', textAlign: 'center', height: 150, maxWidth: 350, '&:hover': { boxShadow: 20 } }} >
                             <CardContent>
                                 <Typography sx={{ fontSize: 12 }} color="primary.lightText" gutterBottom>

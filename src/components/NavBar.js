@@ -1,9 +1,9 @@
-import { Grid, Button, AppBar, Switch, ButtonGroup, Typography } from '@mui/material';
+import { Toolbar, Button, AppBar, Switch, ButtonGroup, Typography } from '@mui/material';
 import React from 'react';
 import { FaHackerrank } from 'react-icons/fa';
 import { themeDefault, themeDark } from '../styles/Style';
-import { BrowserRouter } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 var option = [
     {
@@ -34,37 +34,33 @@ function NavBar({ setMode }) {
         }
     }
     return (
-        <BrowserRouter>
-            <AppBar sx={{ height: 100, justifyContent: "center" }}>
-                <Grid container direction="row" justifyContent="center">
-                    <Grid container xs={1}>
-                        <Link style={{ color: '#FFF' }} to="#" smooth><FaHackerrank size={30} /></Link>
-                    </Grid>
-                    <Grid container xs={10} justifyContent="flex-end">
-                        <ButtonGroup variant="string" aria-label="outlined primary button group">
-
-                            {option.map((page) => (
-                                <Link to={page.link} style={{ color: '#FFF' }} smooth>
-                                    <Button>
-                                        <Typography color="primary.lightText">
-                                            {page.name}
-                                        </Typography>
-                                    </Button>
-                                </Link>
-                            ))}
+        <AppBar sx={{ height: 80, justifyContent: "center" }}>
+            <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', columnGap: 4 }}>
+                <HashLink style={{ color: '#FFF' }} to="#" smooth><FaHackerrank size={30} /></HashLink>
+                <ButtonGroup variant="string" aria-label="outlined primary button group">
+                    {option.map((page, index) => (
+                        <HashLink to={page.link} style={{ color: '#FFF' }} key={index} smooth>
                             <Button>
                                 <Typography color="primary.lightText">
-                                    Blog
+                                    {page.name}
                                 </Typography>
                             </Button>
-                        </ButtonGroup>
-                        <Switch
-                            onChange={changeMode}
-                        ></Switch>
-                    </Grid>
-                </Grid>
-            </AppBar>
-        </BrowserRouter>
+                        </HashLink>
+                    ))}
+                    <Switch
+                        onChange={changeMode}
+                    ></Switch>
+                </ButtonGroup>
+                <Link to="/blog">
+                    <Button variant='contained' color="primary" sx={{height: '2rem'}}>
+                        <Typography color="primary.lightText">
+                            Blog
+                        </Typography>
+                    </Button>
+                </Link>
+            </Toolbar>
+        </AppBar>
+
     )
 }
 

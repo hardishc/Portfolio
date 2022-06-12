@@ -1,31 +1,27 @@
 import './App.css';
 import { React, useState } from 'react';
+import { Box, ThemeProvider, Paper } from '@mui/material';
+import { themeDark, themeDefault } from './styles/Style';
+import HomePage from './pages/Portfolio/HomePage';
+import AboutMe from './pages/Portfolio/AboutMe';
+import Languages from './pages/Portfolio/Languages';
+import Projects from './pages/Portfolio/Projects';
 import NavBar from './components/NavBar';
 import SideBar from './components/SideBar';
-import HomePage from './pages/HomePage';
-import AboutMe from './pages/AboutMe';
-import Languages from './pages/Languages';
-import Projects from './pages/Projects';
-import { Box, Grid, ThemeProvider, Paper } from '@mui/material';
-import { themeDark, themeDefault } from './styles/Style';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import BlogPage from './pages/Blog/Blog';
+import LandingPage from './pages/Portfolio/LandingPage';
 
 function App() {
-  const [mode, setMode] = useState(themeDefault);
+  
 
   return (
-    <Paper sx={{overflow: 'hidden'}}>
-      <ThemeProvider theme={mode} >
-        <Box sx={{ backgroundSize: 'cover'}} style={mode.palette.styles}>
-          <NavBar setMode={setMode} />
-          <SideBar />
-          <HomePage />
-        </Box>
-        <AboutMe />
-        <Languages />
-        <Projects />
-      </ThemeProvider>
-    </Paper>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage/>}></Route>
+        <Route path="/blog" element={<BlogPage />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

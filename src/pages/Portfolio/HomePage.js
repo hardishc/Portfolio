@@ -6,7 +6,7 @@ function HomePage() {
 
     return (
         <Box style={{ width: '100vw', height: '100vh' }} >
-            <Grid container spacing={4} alignItems="center" justifyContent="flex-start" sx={{ my: 12.5, mx: 10, height: '100vh' }} >
+            <Grid container spacing={4} alignItems="center" justifyContent="flex-start" sx={{ my: 10, mx: 10, height: '100vh' }} >
                 <Grid item xs={1} align="left" sx={{ width: 300 }}>
                 </Grid>
                 <Grid item xs={7} align="left" sx={{ width: 300 }}>
