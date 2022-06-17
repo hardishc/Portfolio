@@ -8,11 +8,13 @@ import BlogNavBar from '../../components/BlogComponents/BlogNavBar';
 function Blog() {
     return (
         <ThemeProvider theme={themeDark}>
-            <Box sx={{ backgroundColor: "secondary.main", width: '100vw', height: '100vh', textAlign: 'center' }}>
+            <Box sx={{ backgroundColor: "white", width: '100vw', height: '100vh', textAlign: 'center' }}>
                 <BlogNavBar />
                 <BlogBanner />
-                <BlogCard />
-            </Box >
+                <Box sx={{my: '5rem'}}>
+                    <BlogCard />
+                </Box>
+        </Box >
         </ThemeProvider >
     )
 }
