@@ -7,22 +7,18 @@ import { Link } from 'react-router-dom';
 
 var option = [
     {
-        id: 1,
         name: "Home",
         link: "#"
     },
     {
-        id: 2,
         name: "About",
         link: "#about"
     },
     {
-        id: 3,  
         name: "Skills",
         link: "#skills"
     },
     {
-        id: 4,
         name: "Projects",
         link: "#projects"
     }
@@ -42,8 +38,8 @@ function NavBar({ setMode }) {
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', columnGap: 4 }}>
                 <HashLink style={{ color: '#FFF' }} to="#" smooth><FaHackerrank size={30} /></HashLink>
                 <ButtonGroup variant="string" aria-label="outlined primary button group">
-                    {option.map((page, idx) => (
-                        <HashLink to={page.link} style={{ color: '#FFF' }} key={page.id} smooth>
+                    {option.map((page, index) => (
+                        <HashLink to={page.link} style={{ color: '#FFF' }} key={index} smooth>
                             <Button>
                                 <Typography color="primary.lightText">
                                     {page.name}

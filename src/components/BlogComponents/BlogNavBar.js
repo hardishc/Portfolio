@@ -20,7 +20,7 @@ function BlogNavBar() {
                 <Link to="/" element={<App />} style={{ textDecoration: 'none' }}>
                     <Button variant="contained" sx={{ maxHeight: '2.2rem', width: '100%' }}>
                         <Typography color="primary.lightText" sx={{ fontSize: { xs: '70%', sm: '70%', md: '80%', lg: '80%', xl: '85%' } }}>
-                           Github Portfolio
+                            Back to Portfolio
                         </Typography>
                     </Button>
                 </Link>
