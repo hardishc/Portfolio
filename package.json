@@ -1,6 +1,7 @@
 {
   "version": "0.1.0",
-  "homepage": "https://hardishc.github.io/Portfolio/",
+  "homepage": "https://hardishc.github.io/portfolio/",
+  
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
