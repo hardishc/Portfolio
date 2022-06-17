@@ -1,3 +1,6 @@
+import React from 'react'
+import LightImage from '../styles/background.jpeg';
+import DarkImage from '../styles/backDark.avif';
 import { themeDefault, themeDark } from '../styles/Style';
 import colorTrigger from '../App';
 
