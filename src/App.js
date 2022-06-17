@@ -8,7 +8,7 @@ import Languages from './pages/Portfolio/Languages';
 import Projects from './pages/Portfolio/Projects';
 import NavBar from './components/NavBar';
 import SideBar from './components/SideBar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import BlogPage from './pages/Blog/Blog';
 import LandingPage from './pages/Portfolio/LandingPage';
 
@@ -16,12 +16,12 @@ function App() {
   
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<LandingPage/>}></Route>
         <Route path="/blog" element={<BlogPage />}></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

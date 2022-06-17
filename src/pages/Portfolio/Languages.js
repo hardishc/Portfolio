@@ -70,20 +70,20 @@ function Languages() {
                         </Typography>
                         <Box sx={{ my: 10 }}></Box>
                         <Stack direction="row" color="secondary.main" spacing={6}>
-                            {frontEnd.map((lang) => (
-                                <Tooltip key={lang.comp} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
+                            {frontEnd.map((lang, idx) => (
+                                <Tooltip key={idx} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
                             ))}
                         </Stack>
                         <Box sx={{ my: 10 }}></Box>
                         <Stack color="secondary.main" direction="row" spacing={6}>
-                            {backEnd.map((lang) => (
-                                <Tooltip key={lang.comp} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
+                            {backEnd.map((lang,idx) => (
+                                <Tooltip key={idx} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
                             ))}
                         </Stack>
                         <Box sx={{ my: 10 }}></Box>
                         <Stack color="secondary.main" direction="row" spacing={6}>
-                            {dbHost.map((lang) => (
-                                <Tooltip key={lang.comp} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
+                            {dbHost.map((lang, idx) => (
+                                <Tooltip key={idx} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
                             ))}
                         </Stack>
                     </Box>
