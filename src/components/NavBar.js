@@ -1,8 +1,9 @@
-import { Toolbar, Button, AppBar, Switch, ButtonGroup, Typography } from '@mui/material';
+import { Toolbar, Button, AppBar, Switch, ButtonGroup, Typography, Drawer, useMediaQuery } from '@mui/material';
 import React from 'react';
+import { useState } from "react";
 import { FaHackerrank } from 'react-icons/fa';
 import { themeDefault, themeDark } from '../styles/Style';
-import { HashLink as HashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 
 var option = [
@@ -33,6 +34,9 @@ function NavBar({ setMode }) {
             setMode(themeDefault)
         }
     }
+    const isMobile = useMediaQuery(themeDefault.breakpoints.down("md"));
+
+    const [openDrawer, setOpenDrawer] = useState(false);
     return (
         <AppBar sx={{ height: 80, justifyContent: "center" }}>
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', columnGap: 4 }}>
@@ -51,16 +55,15 @@ function NavBar({ setMode }) {
                         onChange={changeMode}
                     ></Switch>
                 </ButtonGroup>
-                <Link to="/blog">
-                    <Button variant='contained' color="primary" sx={{height: '2rem'}}>
+                < Link to="/blog">
+                    <Button variant='contained' color="primary" sx={{ height: '2rem' }}>
                         <Typography color="primary.lightText">
                             Blog
                         </Typography>
                     </Button>
                 </Link>
             </Toolbar>
-        </AppBar>
-
+        </AppBar >
     )
 }
 
