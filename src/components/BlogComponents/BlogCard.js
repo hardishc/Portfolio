@@ -8,12 +8,12 @@ function BlogCard() {
         <Link to="blog1">
             <Card sx={{ my: '3rem', backgroundColor: "primary.main", display: 'inline-block', paddingInline: 5, width: { xs: 200, sm: 400, lg: 500, xl: 600 }, '&:hover': { boxShadow: 20 } }} >
                 <CardContent>
-                    <Grid container spacing={{ xs: 6, md: 6 }}>
-                        <Grid item xs={4}>
+                    <Grid container spacing="1">
+                        <Grid item sm={6} md={4}>
                             <Box component="img"
                                 sx={{
-                                    height: '100%',
-                                    width: '100%',
+                                    maxHeight: '100%',
+                                    maxWidth: '100%',
                                     opacity: 0.9,
                                     borderRadius: '5%'
                                 }}
@@ -21,7 +21,7 @@ function BlogCard() {
                                 src={BannerImage}>
                             </Box>
                         </Grid>
-                        <Grid item xs={8} >
+                        <Grid item sm={6} md={8} >
                             <Typography variant="h5" color="primary.lightText">
                                 Blog Post 1
                             </Typography>
