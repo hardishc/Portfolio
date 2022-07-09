@@ -7,8 +7,8 @@ import './SideBar.css';
 function SideBar() {
 
     return (
-        <Box sx={{ position: 'fixed', height: '90%', display: { xs: 'none', sm: 'flex' } }}>
-            <List sx={{ display: 'inline-block',    alignSelf: 'flex-end'}}>
+        <Box>
+            <List>
                 <ListItem  >
                     <Link sx={{ '&:hover': { borderLeft: 5 } }} href="http://www.instagram.com/hardish_c" target="_blank"><FaInstagram size={40} /></Link>
                 </ListItem>
