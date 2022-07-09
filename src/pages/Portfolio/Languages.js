@@ -65,7 +65,7 @@ function Languages() {
             <Paper id="skills" style={{ width: '100vw', height: '100vh'}} >
                 <Grid container spacing={4} justifyContent="center" >
                     <Box sx={{ my: 15 }}>
-                        <Typography sx={{ fontSize: 60, textAlign: 'center' }} color="secondary.main" gutterBottom>
+                        <Typography sx={{fontSize: { xs: 40, sm: 60 }, textAlign: 'center' }} color="secondary.main" gutterBottom>
                             Skills
                         </Typography>
                         <Box sx={{ my: 10 }}></Box>
@@ -77,7 +77,7 @@ function Languages() {
                         <Box sx={{ my: 10 }}></Box>
                         <Stack color="secondary.main" direction="row" spacing={6}>
                             {backEnd.map((lang,idx) => (
-                                <Tooltip key={idx} title={lang.name}><Box borderBottom={4} sx={{ '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
+                                <Tooltip key={idx} title={lang.name}><Box borderBottom={4} sx={{ size: 20, '&:hover': { boxShadow: 20 } }}>{lang.comp}</Box></Tooltip>
                             ))}
                         </Stack>
                         <Box sx={{ my: 10 }}></Box>

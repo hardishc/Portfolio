@@ -15,13 +15,15 @@ function LandingPage() {
         <Paper sx={{ overflow: 'hidden' }}>
             <ThemeProvider theme={mode} >
                 <Box sx={{ backgroundSize: 'cover' }} style={mode.palette.styles}>
-                    <NavBar setMode={setMode} />
-                    <SideBar />
+                    <NavBar setMode={setMode} mode={mode}/>
+                    <Box sx={{display:{md:'flex', xs:'none'}, justifyContent:'end', position:'fixed', my:'auto', flexDirection:'column', height:'90vh'}}>
+                        <SideBar />
+                    </Box>
                     <HomePage />
                 </Box>
                 <AboutMe />
                 <Languages />
-                <Projects />
+                {/* <Projects /> */}
             </ThemeProvider>
         </Paper>
     )

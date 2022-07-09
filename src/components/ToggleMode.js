@@ -8,10 +8,8 @@ function ToggleMode(currentMode) {
 
     if (currentMode === themeDefault) {
         colorTrigger(themeDark);
-        
     } else {
         colorTrigger(themeDefault);
-     
     }
 }
 
