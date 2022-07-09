@@ -73,7 +73,7 @@ function BlogPage1() {
             <Box component="img" sx={{ my: '2rem', maxWidth: '80%' }} src={Install3}></Box>
           </Box>
           <Typography variant="h4" align="center" sx={{ mt: '3rem' }}>Video for Node Installation</Typography>
-          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/Hd6iUkmvPho" title="Node Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe allowFullScreen width="100%" height="600px" src="https://www.youtube.com/embed/Hd6iUkmvPho" title="Node Installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </List>
 
 
@@ -97,7 +97,7 @@ function BlogPage1() {
           />
           <ListItem sx={{ mt: '1rem' }}>4.	For the final step, create an index.js file in the root directory of the project.</ListItem>
           <Typography variant="h4" align="center" sx={{ mt: '3rem' }}>Video for Node Project Setup</Typography>
-          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/cdFLD88asXY" title="2  Node Setup" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/cdFLD88asXY" title="2  Node Setup" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </List>
 
 
@@ -155,7 +155,7 @@ http.createServer((req, res) => {
             wrapLines={true}
           />
           <Typography variant="h4" align="center" sx={{ mt: '3rem' }}>Video for Node Server</Typography>
-          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/0Lyu6HzVXiM" title="3  Node Server" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/0Lyu6HzVXiM" title="3  Node Server" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </List>
 
 
@@ -267,7 +267,7 @@ server.listen(PORT, () => console.log('Server is running on port ' + PORT));`}
             wrapLines={true}
           />
           <Typography variant="h4" align="center" sx={{ mt: '3rem' }}>Video for Node Routing</Typography>
-          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/FUIYY26UrkY" title="4  Node Routing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/FUIYY26UrkY" title="4  Node Routing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </List>
 
 
@@ -314,7 +314,7 @@ const PORT = process.env.PORT || 3000;
             wrapLines={true}
           />
            <Typography variant="h4" align="center" sx={{ mt: '3rem' }}>Video for Express Routing</Typography>
-           <iframe width="100%" height="600px" src="https://www.youtube.com/embed/-c907ybiYiA" title="5  Express Routing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <iframe width="100%" height="600px" src="https://www.youtube.com/embed/-c907ybiYiA" title="5  Express Routing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </List>
 
 
