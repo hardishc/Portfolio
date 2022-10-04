@@ -1,5 +1,5 @@
 import '../../App.css';
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import { Box, ThemeProvider, Paper } from '@mui/material';
 import { themeDark, themeDefault } from '../../styles/Style';
 import HomePage from './HomePage';
@@ -11,8 +11,12 @@ import SideBar from '../../components/SideBar';
 
 function LandingPage() {
     const [mode, setMode] = useState(themeDefault);
+
+    useEffect(() => {
+        document.title = "Hardish GitHub Portfolio"
+    }, []);
     return (
-        <Paper sx={{ overflow: 'hidden' }}>
+        <Box sx={{ overflow: 'hidden' }}>
             <ThemeProvider theme={mode} >
                 <Box sx={{ backgroundSize: 'cover' }} style={mode.palette.styles}>
                     <NavBar setMode={setMode} mode={mode}/>
@@ -23,9 +27,9 @@ function LandingPage() {
                 </Box>
                 <AboutMe />
                 <Languages />
-                {/* <Projects /> */}
+                <Projects />
             </ThemeProvider>
-        </Paper>
+        </Box>
     )
 }
 

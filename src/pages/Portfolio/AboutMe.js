@@ -4,8 +4,7 @@ import React from 'react';
 
 function AboutMe() {
     return (
-        <Paper>
-        <Box id="about" alignItems='center' color='primary.main' sx={{ display: 'flex', width: '100vw', height: '100vh' }}>
+        <Box id="about" bgcolor="background.paper" alignItems='center' color='primary.main' sx={{ display: 'flex', width: '100vw', height: '100vh' }}>
             <Box display='flex' justifyContent='space-evenly' alignItem='center' sx={{ maxWidth: { xs: '80vw', sm: '70vw' }, margin: '0 auto', flexWrap: 'wrap' }}>
                 <Box sx={{ width: { xs: '100%', lg: '40%' } }}>
                     <Typography color='primary.darkText' sx={{ fontSize: { xs: 40, sm: 60 } }}>
@@ -21,7 +20,6 @@ function AboutMe() {
                 </Box>
             </Box>
         </Box>
-        </Paper>
     )
 }
 

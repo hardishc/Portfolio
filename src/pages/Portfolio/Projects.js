@@ -3,6 +3,12 @@ import React from 'react';
 
 const projects = [
     {
+        title: 'Feel-Good-First Fitness Platform',
+        description: 'Fitness platform for a Vancouver based client built from scratch using MERN stack. CRUD functionality using REST API. Argon2 for password encryption. Redux toolkit and RTK Query used for state management. Deployment on AWS E3.',
+        status: '',
+        link: 'https://github.com/hardishc/Portfolio'
+    },
+    {
         title: 'Developer Portfolio',
         description: 'Github Portfolio built using React and Material-UI',
         status: 'Click to view',
@@ -24,14 +30,14 @@ const projects = [
 
 function Projects() {
     return (
-        <Paper id="projects" sx={{ width: '100vw', height: '90vh' }}>
+        <Box id="projects" bgcolor="background.paper" sx={{ width: '100vw', height: '90vh'}}>
             <Typography sx={{ fontSize: 60, textAlign: 'center', paddingTop: 5, paddingBottom: 15 }} color="secondary.main" gutterBottom>
                 Projects
             </Typography>
             <Box sx={{ display: 'flex', maxWidth: '80vw', margin: '0 auto', flexWrap: 'wrap', justifyContent: 'space-evenly', columnGap: 20, rowGap: 5 }}>
                 {projects.map((project, index) => (
-                    // <Link color="inherit" underline="none" href="https://github.com/hardishc/Portfolio" target="_blank" key={index}>
-                        <Card sx={{ backgroundColor: "primary.main", display: 'inline-block', textAlign: 'center', height: 150, maxWidth: 350, '&:hover': { boxShadow: 20 } }} >
+                    <Link color="inherit" underline="none" href={project.link} target="_blank" key={index}>
+                        <Card sx={{ backgroundColor: "primary.main", display: 'inline-block', textAlign: 'center', maxWidth: 350, '&:hover': { boxShadow: 20 } }} >
                             <CardContent>
                                 <Typography sx={{ fontSize: 12 }} color="primary.lightText" gutterBottom>
                                     {project.status}
@@ -44,10 +50,10 @@ function Projects() {
                                 </Typography>
                             </CardContent>
                         </Card>
-                    // </Link>
+                    </Link>
                 ))}
             </Box>
-        </ Paper>
+        </ Box>
 
     )
 }
