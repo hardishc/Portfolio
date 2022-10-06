@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+src/pages/Blog/BlogPost2Assets
+src/styles
 /.pnp
 .pnp.js
 
