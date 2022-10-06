@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.fec318b0.css",
-    "main.js": "/Portfolio/static/js/main.55c35b2c.js",
+    "main.css": "/Portfolio/static/css/main.d5ce395b.css",
+    "main.js": "/Portfolio/static/js/main.19b1b38d.js",
     "react-syntax-highlighter/refractor-core-import.js": "/Portfolio/static/js/react-syntax-highlighter/refractor-core-import.5a784531.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/Portfolio/static/js/react-syntax-highlighter_languages_refractor_abap.e5714277.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/Portfolio/static/js/react-syntax-highlighter_languages_refractor_actionscript.0e828f0d.chunk.js",
@@ -169,10 +169,22 @@
     "static/media/CPUIO.jpg": "/Portfolio/static/media/CPUIO.c99779da038de928d0c1.jpg",
     "static/media/ContactPage.jpg": "/Portfolio/static/media/ContactPage.7df011ee82bf7e1ea2c6.jpg",
     "static/media/HomePage.jpg": "/Portfolio/static/media/HomePage.42c7fb94854090495bb1.jpg",
+    "static/media/aws.svg": "/Portfolio/static/media/aws.399d67784ee75088578cb40a13f3f7dd.svg",
+    "static/media/arrow.svg": "/Portfolio/static/media/arrow.1458d63eb63576066629605fbe2e35a6.svg",
+    "static/media/react.svg": "/Portfolio/static/media/react.14d137610592375f98f3f61da87f92b4.svg",
+    "static/media/ant.svg": "/Portfolio/static/media/ant.f6c6bc13e0b63f1340ce89f63f105d1b.svg",
+    "static/media/node.svg": "/Portfolio/static/media/node.3f999b13143a607c187a38af297617f3.svg",
+    "static/media/java.svg": "/Portfolio/static/media/java.d8fe901363da1b3d5694e861c93cc440.svg",
+    "static/media/html.svg": "/Portfolio/static/media/html.0945c384089de1b76cb28e03505bbfa1.svg",
+    "static/media/css.svg": "/Portfolio/static/media/css.414796dc89c81a9f2d51024e1259e6df.svg",
+    "static/media/python.svg": "/Portfolio/static/media/python.a3d36340acf8542786a7419c42847290.svg",
+    "static/media/mui.svg": "/Portfolio/static/media/mui.a87b62deb331de86b9da5b88138bf920.svg",
+    "static/media/oracle.svg": "/Portfolio/static/media/oracle.acf1624f93615184f9f55ff67fc44da0.svg",
+    "static/media/mongodb.svg": "/Portfolio/static/media/mongodb.3c009d4fd9c9f227a68065385868f33a.svg",
     "index.html": "/Portfolio/index.html",
-    "static/media/js.svg": "/Portfolio/static/media/js.0dd1cf6c80bb500c655a617006c1148a.svg",
-    "main.fec318b0.css.map": "/Portfolio/static/css/main.fec318b0.css.map",
-    "main.55c35b2c.js.map": "/Portfolio/static/js/main.55c35b2c.js.map",
+    "static/media/js.svg": "/Portfolio/static/media/js.c68e002ceed733867110f7765301356e.svg",
+    "main.d5ce395b.css.map": "/Portfolio/static/css/main.d5ce395b.css.map",
+    "main.19b1b38d.js.map": "/Portfolio/static/js/main.19b1b38d.js.map",
     "refractor-core-import.5a784531.chunk.js.map": "/Portfolio/static/js/react-syntax-highlighter/refractor-core-import.5a784531.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.e5714277.chunk.js.map": "/Portfolio/static/js/react-syntax-highlighter_languages_refractor_abap.e5714277.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.0e828f0d.chunk.js.map": "/Portfolio/static/js/react-syntax-highlighter_languages_refractor_actionscript.0e828f0d.chunk.js.map",
@@ -328,7 +340,7 @@
     "787.7efd31bd.chunk.js.map": "/Portfolio/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fec318b0.css",
-    "static/js/main.55c35b2c.js"
+    "static/css/main.d5ce395b.css",
+    "static/js/main.19b1b38d.js"
   ]
 }
