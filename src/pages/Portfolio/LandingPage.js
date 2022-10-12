@@ -11,6 +11,7 @@ import NavBar from '../../components/NavBar';
 import SideBar from '../../components/SideBar';
 import {ReactComponent as Arrow} from "../../styles/arrow.svg";
 import '../../styles/arrow.css'
+import {motion} from "framer-motion";
 
 function LandingPage() {
     const [mode, setMode] = useState(themeDefault);
@@ -43,9 +44,31 @@ function LandingPage() {
                     </Box>
                     <HomePage/>
                 </Box>
-                <AboutMe/>
-                <Languages/>
-                <Projects/>
+                <motion.div
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{once: true}}
+                    transition={{delay: 0.5}}
+                >
+                    <AboutMe/>
+                </motion.div>
+                <motion.div
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{once: true}}
+                    transition={{delay: 0.5}}
+                >
+                    <Languages/>
+                </motion.div>
+                <motion.div
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    viewport={{once: true}}
+                    transition={{delay: 0.5}}
+                >
+                    <Projects/>
+                </motion.div>
+
             </ThemeProvider>
         </Box>
     )
