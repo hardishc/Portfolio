@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.d5ce395b.css",
-    "main.js": "/Portfolio/static/js/main.72423593.js",
+    "main.js": "/Portfolio/static/js/main.72bc16bb.js",
     "react-syntax-highlighter/refractor-core-import.js": "/Portfolio/static/js/react-syntax-highlighter/refractor-core-import.5a784531.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/Portfolio/static/js/react-syntax-highlighter_languages_refractor_abap.e5714277.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/Portfolio/static/js/react-syntax-highlighter_languages_refractor_actionscript.0e828f0d.chunk.js",
@@ -155,7 +155,14 @@
     "react-syntax-highlighter_languages_refractor_xquery.js": "/Portfolio/static/js/react-syntax-highlighter_languages_refractor_xquery.9ddb34f0.chunk.js",
     "react-syntax-highlighter_languages_refractor_yaml.js": "/Portfolio/static/js/react-syntax-highlighter_languages_refractor_yaml.420f4be3.chunk.js",
     "static/js/787.7efd31bd.chunk.js": "/Portfolio/static/js/787.7efd31bd.chunk.js",
+    "static/media/Landing Page.webm": "/Portfolio/static/media/Landing Page.bff5eacbf40ec9c7b805.webm",
+    "static/media/UserProgress.webm": "/Portfolio/static/media/UserProgress.30b7deb12e5e16ffedd9.webm",
+    "static/media/EditProfile.webm": "/Portfolio/static/media/EditProfile.c05160181bf63e37980d.webm",
     "static/media/Profile.jpg": "/Portfolio/static/media/Profile.a3b30261a149e121f54b.jpg",
+    "static/media/Dashboard.webm": "/Portfolio/static/media/Dashboard.835d445b534a731fb50f.webm",
+    "static/media/Messages.webm": "/Portfolio/static/media/Messages.734b22276e7294514c8c.webm",
+    "static/media/UserManagement.webm": "/Portfolio/static/media/UserManagement.d26ee8900fbe2fd64fdf.webm",
+    "static/media/Login.webm": "/Portfolio/static/media/Login.0e3a88bf5d0ec90502c6.webm",
     "static/media/Light.jpg": "/Portfolio/static/media/Light.4453d69e502e86c8e35f.jpg",
     "static/media/Dark.jpg": "/Portfolio/static/media/Dark.b5b7bef5800e007d8804.jpg",
     "static/media/NoMiddleware.jpg": "/Portfolio/static/media/NoMiddleware.3cfb3fac2346168c90e6.jpg",
@@ -184,7 +191,7 @@
     "index.html": "/Portfolio/index.html",
     "static/media/js.svg": "/Portfolio/static/media/js.c68e002ceed733867110f7765301356e.svg",
     "main.d5ce395b.css.map": "/Portfolio/static/css/main.d5ce395b.css.map",
-    "main.72423593.js.map": "/Portfolio/static/js/main.72423593.js.map",
+    "main.72bc16bb.js.map": "/Portfolio/static/js/main.72bc16bb.js.map",
     "refractor-core-import.5a784531.chunk.js.map": "/Portfolio/static/js/react-syntax-highlighter/refractor-core-import.5a784531.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.e5714277.chunk.js.map": "/Portfolio/static/js/react-syntax-highlighter_languages_refractor_abap.e5714277.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.0e828f0d.chunk.js.map": "/Portfolio/static/js/react-syntax-highlighter_languages_refractor_actionscript.0e828f0d.chunk.js.map",
@@ -341,6 +348,6 @@
   },
   "entrypoints": [
     "static/css/main.d5ce395b.css",
-    "static/js/main.72423593.js"
+    "static/js/main.72bc16bb.js"
   ]
 }
