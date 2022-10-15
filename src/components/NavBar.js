@@ -1,4 +1,15 @@
-import {AppBar, Button, ButtonGroup, SwipeableDrawer, Switch, Toolbar, Typography, List, ListItem, Box } from '@mui/material';
+import {
+    AppBar,
+    Button,
+    ButtonGroup,
+    SwipeableDrawer,
+    Switch,
+    Toolbar,
+    Typography,
+    List,
+    ListItem,
+    Box
+} from '@mui/material';
 import React, {useState} from 'react';
 import {FaHackerrank} from 'react-icons/fa';
 import {BsChevronBarLeft} from "react-icons/bs";
@@ -27,29 +38,29 @@ var option = [
     }
 ]
 
-function NavBar({ setMode, mode }) {
+function NavBar({setMode, mode}) {
 
     const [open, setOpen] = useState(false)
-    const [currentMode, setcurrentMode] = useState('Dark')
+    const [currentMode, setCurrentMode] = useState('Dark')
 
     const changeMode = (event) => {
         if (mode === themeDefault) {
             setMode(themeDark)
-            setcurrentMode('Light')
+            setCurrentMode('Light')
         } else {
             setMode(themeDefault)
-            setcurrentMode('Dark')
+            setCurrentMode('Dark')
         }
     }
 
     return (
         <>
-            <AppBar sx={{ height: 80, justifyContent: "center" }}>
-                <Toolbar sx={{ justifyContent: 'space-around', columnGap: 4,display: { md: 'flex', xs: 'none' } }}>
-                    <HashLink style={{ color: '#FFF'}} to="#" smooth><FaHackerrank size={30} /></HashLink>
+            <AppBar sx={{height: 80, justifyContent: "center"}}>
+                <Toolbar sx={{justifyContent: 'space-around', columnGap: 4, display: {md: 'flex', xs: 'none'}}}>
+                    <HashLink style={{color: '#FFF'}} to="#" smooth><FaHackerrank size={30}/></HashLink>
                     <ButtonGroup variant="string" aria-label="outlined primary button group">
                         {option.map((page, index) => (
-                            <HashLink to={page.link} style={{ color: '#FFF' }} key={index} smooth>
+                            <HashLink to={page.link} style={{color: '#FFF'}} key={index} smooth>
                                 <Button>
                                     <Typography color="primary.lightText">
                                         {page.name}
@@ -62,29 +73,33 @@ function NavBar({ setMode, mode }) {
                         ></Switch>
                     </ButtonGroup>
                     <Link to="/blog">
-                        <Button variant='contained' color="primary" sx={{ height: '2rem' }}>
+                        <Button variant='contained' color="primary" sx={{height: '2rem'}}>
                             <Typography color="primary.lightText">
                                 Blog
                             </Typography>
                         </Button>
                     </Link>
                 </Toolbar>
-                <Box sx={{display: { md: 'none', xs: 'block' }}}>
-                    <Button onClick={()=> setOpen(true)} sx={{color:'primary.lightText'}}><RiMenuFill size={30}/></Button>
+                <Box sx={{display: {md: 'none', xs: 'block'}}}>
+                    <Button onClick={() => setOpen(true)} sx={{color: 'primary.lightText'}}><RiMenuFill
+                        size={30}/></Button>
                 </Box>
-            </AppBar >
-            <SwipeableDrawer anchor="left" open={open} onOpen={()=>setOpen(true)} onClose={()=>setOpen(false)} PaperProps={{sx:{backgroundColor:'#0D0D0D'}}} sx={{color:'red' , display: { md: 'none', xs: 'block' }}}>
-                <Button onClick={()=> setOpen(false)} sx={{color:'primary.lightText'}}><BsChevronBarLeft size={30}/></Button>
+            </AppBar>
+            <SwipeableDrawer anchor="left" open={open} onOpen={() => setOpen(true)} onClose={() => setOpen(false)}
+                             PaperProps={{sx: {backgroundColor: '#0D0D0D'}}}
+                             sx={{color: 'red', display: {md: 'none', xs: 'block'}}}>
+                <Button onClick={() => setOpen(false)} sx={{color: 'primary.lightText'}}><BsChevronBarLeft
+                    size={30}/></Button>
                 <ButtonGroup variant="string" aria-label="outlined primary button group">
                     <List>
                         <ListItem>
                             <Button variant={"contained"}
-                                onClick={changeMode}
+                                    onClick={changeMode}
                             ><Typography color="primary.lightText">{currentMode} Mode</Typography></Button>
                         </ListItem>
                         {option.map((page, index) => (
                             <ListItem>
-                                <HashLink to={page.link} style={{ color: '#FFF' }} key={index} smooth>
+                                <HashLink to={page.link} style={{color: '#FFF'}} key={index} smooth>
                                     <Button>
                                         <Typography color="primary.lightText">
                                             {page.name}
@@ -98,7 +113,7 @@ function NavBar({ setMode, mode }) {
                 <List>
                     <ListItem>
                         <Link to="/blog">
-                            <Button variant="contained" color="primary" sx={{ height: '2rem' }}>
+                            <Button variant="contained" color="primary" sx={{height: '2rem'}}>
                                 <Typography color="primary.lightText">
                                     Go to Blog
                                 </Typography>
@@ -106,7 +121,7 @@ function NavBar({ setMode, mode }) {
                         </Link>
                     </ListItem>
                     <ListItem>
-                        <SideBar />
+                        <SideBar/>
                     </ListItem>
                 </List>
             </SwipeableDrawer>

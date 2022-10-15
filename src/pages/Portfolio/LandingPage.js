@@ -42,7 +42,7 @@ function LandingPage() {
                     }}>
                         <SideBar/>
                     </Box>
-                    <HomePage/>
+                    <HomePage mode={mode.palette.theme}/>
                 </Box>
                 <motion.div
                     initial={{opacity: 0}}

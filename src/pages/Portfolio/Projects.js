@@ -6,7 +6,7 @@ const projects = [
         title: 'Feel-Good-First Fitness Platform',
         description: 'Fitness platform for a Vancouver based client built from scratch using MERN stack. CRUD functionality using REST API. Argon2 for password encryption. Redux toolkit and RTK Query used for state management. Deployment on AWS E3.',
         status: '',
-        link: 'https://github.com/hardishc/Portfolio'
+        link: '#/project/fgf'
     },
     {
         title: 'Developer Portfolio',
