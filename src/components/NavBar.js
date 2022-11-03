@@ -22,19 +22,19 @@ import SideBar from "./SideBar";
 var option = [
     {
         name: "Home",
-        link: "#"
+        link: "/#",
     },
     {
         name: "About",
-        link: "#about"
+        link: "/#about",
     },
     {
         name: "Skills",
-        link: "#skills"
+        link: "/#skills"
     },
     {
         name: "Projects",
-        link: "#projects"
+        link: "/#projects"
     }
 ]
 
