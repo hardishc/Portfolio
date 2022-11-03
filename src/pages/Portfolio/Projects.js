@@ -15,17 +15,16 @@ const projects = [
         link: 'https://github.com/hardishc/Portfolio'
     },
     {
+        title: 'Photography Portfolio',
+        description: 'Personal Photography Portfolio website made using ReactJS (hosted on Netlify) and ExpressJS (hosted on Heroku)',
+        status: '',
+        link: 'https://hcphotography.netlify.app'
+    },
+    {
         title: 'Assignment Collaborator',
         description: ' Assignment Collaborator Platform for students to manage their group and personal assignments',
         status: 'Work in Progress',
-        link: '/'
     },
-    {
-        title: 'Photography Portfolio',
-        description: 'Personal Photography Portfolio website made using React',
-        status: 'Work in Progress',
-        link: '/'
-    }
 ]
 
 function Projects() {

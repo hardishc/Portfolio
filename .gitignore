@@ -27,3 +27,4 @@ yarn-error.log*
 .idea/modules.xml
 .idea/portfolio.iml
 .idea/vcs.xml
+src/components/Projects/FGF/
